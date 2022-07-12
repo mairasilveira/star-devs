@@ -1,19 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html Lang="pt-br">
+
 <head>
     <meta charset='utf-8'>
-    <title>Star Dev</title>
+    <title>Star-Devs</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' href='styles.css'>
     <script src='index.js' defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-
+        <h1>Star-Devs</h1>
     </header>
-    <main>
 
+    <main>
+        <section class="cards-main"></section>
+        <div class="card-container">
+            <div class="card-main">
+                <span>Personagens</span>
+                <h2 id="persons">Carregando...</h2>
+            </div>
+            <img src="./img/darth.svg" alt="Imagem Personagens">
+        </div>
+
+        <div class="card-container">
+            <div class="card-main">
+                <span>Naves Estelares</span>
+                <h2 id="starships">Carregando...</h2>
+            </div>
+            <img src="./img/starships.svg" alt="Naves Estelares">
+        </div>
+
+        <div class="card-container">
+            <div class="card-main">
+                <span>Planetas</span>
+                <h2 id="planets">Carregando...</h2>
+            </div>
+            <img src="./img/planet.svg" alt="Planetas">
+        </div>
+
+        <section class="phrases-container">
+            <button id="btn-phrases">Ler uma frase!</button>
+            <p id="phrase"></p>
+        </section>
     </main>
-    
+
 </body>
+
 </html>
