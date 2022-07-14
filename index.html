@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html Lang="pt-br">
+<html lang="pt-br">
 
 <head>
-    <meta charset='utf-8'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star-Devs</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' href='styles.css'>
-    <script src='index.js' defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- JS -->
+    <script src="index.js" defer></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -18,33 +20,34 @@
     </header>
 
     <main>
-        <section class="cards-main"></section>
-        <div class="card-container">
-            <div class="cards-main">
-                <span>Personagens</span>
-                <h2 id="persons">Carregando...</h2>
+        <section class="cards-main">
+            <div class="card-container">
+                <div class="card-main">
+                    <span>Personagens</span>
+                    <h2 id="persons">Carregando...</h2>
+                </div>
+                <img src="./img/darth.svg" alt="Imagem Personagens">
             </div>
-            <img src="./img/darth.svg" alt="Imagem Personagens">
-        </div>
 
-        <div class="card-container">
-            <div class="cards-main">
-                <span>Naves Estelares</span>
-                <h2 id="starships">Carregando...</h2>
+            <div class="card-container">
+                <div class="card-main">
+                    <span>Naves Estelares</span>
+                    <h2 id="starships">Carregando...</h2>
+                </div>
+                <img src="./img/starship.svg" alt="Imagem Naves Estalares">
             </div>
-            <img src="./img/starship.svg" alt="Naves Estelares">
-        </div>
 
-        <div class="card-container">
-            <div class="cards-main">
-                <span>Planetas</span>
-                <h2 id="planets">Carregando...</h2>
+            <div class="card-container">
+                <div class="card-main">
+                    <span>Planetas</span>
+                    <h2 id="planets">Carregando...</h2>
+                </div>
+                <img src="./img/planet.svg" alt="Imagem Planetas">
             </div>
-            <img src="./img/planet.svg" alt="Planetas">
-        </div>
+        </section>
 
         <section class="phrases-container">
-            <button id="btn-phrases">Ler uma frase!</button>
+            <button id="btn-phrases" onclick="loadPhrase()">Ler uma frase!</button>
             <p id="phrase"></p>
         </section>
     </main>
